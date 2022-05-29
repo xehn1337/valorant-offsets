@@ -1,7 +1,12 @@
 namespace offsets {
 	// global
-	uint64_t uworld_key = 0x9015538;
-	uint64_t uworld_state = 0x9015500;
+	uint64_t uworld_key = 0x8E16EB8; 
+	uint64_t uworld_state = 0x8E16E80;
+	uint64_t line_of_sight = 0x4936D10;
+	uint64_t gobject_state = 0x8C71C80;
+	uint64_t gobject_key = 0x8C71CB8;
+	
+	// world
 	uint64_t persistent_level = 0x38;			// world > persistent_level
 	uint64_t game_instance = 0x1A8;				// world > game_instance
 
@@ -14,7 +19,8 @@ namespace offsets {
 	// vector
 	uint64_t root_component = 0x230;			// world > game_instance > localplayers_array[0] > playercontroller > apawn > root_component				// aactor > root_component
 	uint64_t position = 0x164;				// world > game_instance > localplayers_array[0] > playercontroller > apawn > root_component > position		// aactor > root_component > position
-
+	uint64_t rotation = 0x170;				// world > game_instance > localplayers_array[0] > playercontroller > apawn > root_component > rotation		// aactor > root_component > rotation
+	
 	// controllers
 	uint64_t damage_controller = 0x9A8;			// world > game_instance > localplayers_array[0] > playercontroller > apawn > damage_controller				// aactor > damage_controller
 	uint64_t camera_controller = 0x440;			// world > game_instance > localplayers_array[0] > playercontroller > camera_controller
@@ -33,7 +39,7 @@ namespace offsets {
 	// level > actors info
 	uint64_t actor_id = 0x18;				// world > persistent_level > aactor > actor_id
 	uint64_t unique_id = 0x38;				// world > persistent_level > aactor > unique_id
-	uint64_t team_component = 0x5A0;			// world > persistent_level > aactor > player_state > team_component
+	uint64_t team_component = 0x5B0;			// world > persistent_level > aactor > player_state > team_component
 	uint64_t team_id = 0xF8;				// world > persistent_level > aactor > team_component > team_id
 	uint64_t health = 0x1B0;				// world > persistent_level > aactor > damage_controller > health
 	uint64_t dormant = 0x100;				// world > persistent_level > aactor > dormant
