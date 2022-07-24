@@ -1,10 +1,11 @@
 namespace offsets {
 	// global
-	uint64_t uworld_key = 0x8E16EB8; 
-	uint64_t uworld_state = 0x8E16E80;
-	uint64_t line_of_sight = 0x4936D10;
-	uint64_t gobject_state = 0x8C71C80;
-	uint64_t gobject_key = 0x8C71CB8;
+	uint64_t uworld_key = 0x8853638; 
+	uint64_t uworld_state = 0x8853600;
+	uint64_t line_of_sight = 0x44DC000;
+	uint64_t bone_matrix = 0x44A46B0;
+	
+	uint64_t pakman_offset = 0x18E0700;                     // deref_pointer_in_game_space_fn - https://www.unknowncheats.me/forum/valorant/503616-dumping-valorant-perfect-results-easy.html
 	
 	// world
 	uint64_t persistent_level = 0x38;			// world > persistent_level
@@ -39,7 +40,7 @@ namespace offsets {
 	// level > actors info
 	uint64_t actor_id = 0x18;				// world > persistent_level > aactor > actor_id
 	uint64_t unique_id = 0x38;				// world > persistent_level > aactor > unique_id
-	uint64_t team_component = 0x5B0;			// world > persistent_level > aactor > player_state > team_component
+	uint64_t team_component = 0x628;			// world > persistent_level > aactor > player_state > team_component
 	uint64_t team_id = 0xF8;				// world > persistent_level > aactor > team_component > team_id
 	uint64_t health = 0x1B0;				// world > persistent_level > aactor > damage_controller > health
 	uint64_t dormant = 0x100;				// world > persistent_level > aactor > dormant
