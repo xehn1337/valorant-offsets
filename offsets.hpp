@@ -7,6 +7,9 @@ namespace offsets {
 	uint64_t line_of_sight = 0x4BE1D40;			// game_base
 	uint64_t bone_matrix = 0x4BA7E50;			// game_base
 	
+	// veh deref
+	uint64_t pakman_offset = 0x1D9DC50;                     // deref_pointer_in_game_space_fn
+		
 	// world
 	uint64_t persistent_level = 0x38;			// world > persistent_level
 	uint64_t game_instance = 0x1A0;				// world > game_instance
